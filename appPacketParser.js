@@ -6,6 +6,15 @@
 var fs = require('fs');
 
 var rawdata1 = [133, 2, 1,3,6,9];
+var rawdata = [
+    132,    // COMMAND_CLASS_WAKE_UP
+    6,      // WAKE_UP_INTERVAL_Report
+    0,
+    56,
+    64,
+    1
+]
+//[ 133, 2, 1, 3, 6, 9 ]
 
 var rawdata2 = [133, 2, 1];
 var rawdata3 = [133, 2, 1];
@@ -34,7 +43,7 @@ var parseRawData = function(RawData){
             for (var clmd in clscmd) {
                 if (RawData[1] == clscmd[clmd].key) {
                     commndPcket.cmd = clmd;
-                    var data = rawdata1.slice(2,rawdata1.length);
+                    var data = RawData.slice(2,rawdata1.length);
                     commndPcket.payload = data;
                     return commndPcket;
                 }
@@ -63,7 +72,7 @@ var makeRawData = function(command_class, command, payload){
 }
 
 
-var unpack = parseRawData(rawdata1);
+var unpack = parseRawData(rawdata);
 
 var pack = makeRawData(unpack.cmd_class, unpack.cmd, unpack.payload);
 
