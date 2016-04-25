@@ -1,0 +1,786 @@
+Set user code QUERY: { cmd: 'rawexec',
+  node: 9,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 99, 2, 1 ] }
+Set user code QUERY: { cmd: 'rawexec',
+  node: 9,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 128, 2 ] }
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x0x63 0x00x03 0x00x01 0x00x01 0x0x30 0x0x31 0x0x32 0x0x33 0x0x34 0x0x35
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x0x80 0x00x03 0x0x5a
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x0x23 0x00x02 0x0x80 0x0x50 0x0x60 0x00x00 0x00x00 0x0x71 0x00x05 0x0x15 0x00x01
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x0x23 0x00x02 0x0x80 0x0x50 0x0x61 0x00x00 0x00x00 0x0x71 0x00x05 0x0x11 0x00x01
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x0x23 0x00x02 0x0x80 0x0x50 0x0x62 0x00x00 0x00x00 0x0x71 0x00x05 0x0x11 0x00x02
+
+
+//==================================New-Log==========================================//
+
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x4c 0x04 0x01 0x07 0xd0 0x01 0x01 0x06 0x0c 0x01 0x08 0x00 0x00
+COMMAND_CLASS_DOOR_LOCK_LOGGING
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x63 0x00 0x00 0x71 0x05 0x15 0x01
+COMMAND_CLASS_ZIP_V2
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x64 0x00 0x00 0x71 0x05 0x15 0x01
+COMMAND_CLASS_ZIP_V2
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x65 0x00 0x00 0x71 0x05 0x16 0x01
+COMMAND_CLASS_ZIP_V2
+
+COMMAND_CLASS_ZIP_V2
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x66 0x00 0x00 0x71 0x05 0x16 0x01
+COMMAND_CLASS_ZIP_V2
+
+0x23 = COMMAND_CLASS_ZIP  n-z/page-no:381
+0x02 = COMMAND_ZIP_PACKET
+
+door lock/unlock
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x74 0x00 0x00 0x71 0x05 0x11 0x01
+COMMAND_CLASS_ZIP_V2
+UNSOLICITED:
+├─ type: unsolicited
+├─ node: 9
+└─ rawdata: 0x23 0x02 0x80 0x50 0x75 0x00 0x00 0x71 0x05 0x11 0x02
+COMMAND_CLASS_ZIP_V2
+
+lock logging
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x4c 0x04 0x01 0x07 0xd0 0x01 0x01 0x06 0x2f 0x14 0x02 0x02 0x05 0x31 0x33 0x35 0x37 0x39
+COMMAND_CLASS_DOOR_LOCK_LOGGING
+
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x4c 0x04 0x04 0x07 0xd0 0x01 0x01 0x06 0x3b 0x06 0x08 0x00 0x00
+COMMAND_CLASS_DOOR_LOCK_LOGGING
+
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x4c 0x04 0x01 0x07 0xd0 0x01 0x01 0x06 0x2f 0x14 0x02 0x02 0x05 0x31 0x33 0x35 0x37 0x39
+COMMAND_CLASS_DOOR_LOCK_LOGGING
+RESPONSE:
+├─ type: response
+├─ node: 9
+├─ ep: 0
+└─ rawdata: 0x63 0x03 0x02 0x01 0x31 0x33 0x35 0x37 0x39
+COMMAND_CLASS_USER_CODE
+
+//====================================04-03-16===========================//
+
+//**Thermostat**//
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x52 0x00 0x00 0x43 0x03 0x02 0x09 0x4b
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x53 0x00 0x00 0x43 0x03 0x02 0x09 0x4b
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x54 0x00 0x00 0x43 0x03 0x02 0x09 0x4a
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x55 0x00 0x00 0x43 0x03 0x02 0x09 0x4a
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x56 0x02 0x00 0x31 0x05 0x05 0x01 0x34
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x57 0x02 0x00 0x31 0x05 0x05 0x01 0x34
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x58 0x00 0x00 0x43 0x03 0x02 0x09 0x49
+
+
+
+
+//===============================Thermostate====================================//
+
+
+Get battery level QUERY:
+Response Msg:
+├─ type: response
+├─ node: 11
+├─ ep: 0
+└─ rawdata: 0x80 0x03 0x57
+battery status  { status: 87 }
+
+Get Operating mode Query:
+Response Msg:
+├─ type: response
+├─ node: 11
+├─ ep: 0
+└─ rawdata: 0x42 0x03 0x00
+operating_state { state: 'Idle' }
+
+
+//-----------state-Idle--------------------//
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x27 0x00 0x00 0x40 0x03 0x00
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x28 0x00 0x00 0x40 0x03 0x00
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x29 0x00 0x00 0x42 0x03 0x00
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x2a 0x00 0x00 0x42 0x03 0x00
+
+//-------------------------------------------------------//
+
+//------------state-cool-------------------------------//
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x2b 0x00 0x00 0x40 0x03 0x02
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x2c 0x00 0x00 0x40 0x03 0x02
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x2d 0x00 0x00 0x42 0x03 0x02
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x2e 0x00 0x00 0x42 0x03 0x02
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x2f 0x00 0x00 0x45 0x03 0x01
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x30 0x00 0x00 0x45 0x03 0x01
+
+//-----------------------------------------------------------------//
+
+//------------------RanDom-------------------------//
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x31 0x00 0x00 0x31 0x05 0x01 0x2a 0x03 0x1b
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0x32 0x00 0x00 0x31 0x05 0x01 0x2a 0x03 0x1b
+
+//------------------------------------------------------------//
+
+//-----------------------set-heating-cooling---------------------//
+Get thermostat colling point Query: { cmd: 'rawexec',
+  node: 11,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 67, 2, 2 ] }
+Get thermostat heating point  Query: { cmd: 'rawexec',
+  node: 11,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 67, 2, 1 ] }
+
+Dearfault Response Msg:
+├─ type: response
+├─ node: 11
+├─ ep: 0
+└─ rawdata: 0x43 0x03 0x02 0x09 0x5f
+
+Dearfault Response Msg:
+├─ type: response
+├─ node: 11
+├─ ep: 0
+└─ rawdata: 0x43 0x03 0x01 0x09 0x24
+
+//------------------------------------------------------------//
+
+manual setpoint colling
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0xaf 0x00 0x00 0x43 0x03 0x02 0x09 0x2e
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0xb0 0x00 0x00 0x43 0x03 0x02 0x09 0x2e
+
+manual setpoint heating
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0xb7 0x00 0x00 0x43 0x03 0x01 0x09 0x25
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x80 0x50 0xb8 0x00 0x00 0x43 0x03 0x01 0x09 0x25
+
+//-------------------Multilevel-Sensor---------------------------------//
+
+humidity
+Default value:
+ ├─ type: unsolicited
+├─ node: 11                                             type scale val1
+└─ rawdata: 0x23 0x02 0x00 0x50 0x1b 0x02 0x00 0x31 0x05 0x05 0x01 0x2a
+
+Air temparature:
+Default value:
+ ├─ type: unsolicited
+├─ node: 11                                             type scale val1 val2
+└─ rawdata: 0x23 0x02 0x00 0x50 0x1d 0x00 0x00 0x31 0x05 0x01 0x2a 0x02 0xfd
+
+0x2a = 0b 001 01 010
+
+humidity
+Default value:
+ ├─ type: unsolicited
+├─ node: 11
+└─ rawdata: 0x23 0x02 0x00 0x50 0x1f 0x02 0x00 0x31 0x05 0x05 0x01 0x29
+
+//---------------------------//
+temo debug:
+
+ 0b 000 01 000 = 0x08
+
+ 11100101
+//----------------------------//
+
+//-------------------door-sensor-log------------------------------//
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x47 0x00 0x00 0x84 0x07
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x48 0x00 0x00 0x84 0x07
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x49 0x00 0x00 0x30 0x03 0xff
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x4a 0x00 0x00 0x71 0x05 0x00 0xff 0x00 0xff 0x07 0x03 0x01 0x00
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x4b 0x00 0x00 0x30 0x03 0x00
+
+Unsoliciated Msg:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x4c 0x00 0x00 0x30 0x03 0xff
+
+
+//--------------------------------When-cover-case-opened-------------------------//
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x94 0x00 0x00 0x71 0x05 0x00 0xff 0x00 0xff 0x07 0x03 0x01 0x00
+
+//----------------------------cover-closed--------------------------------//
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x96 0x00 0x00 0x84 0x07
+
+Door Window position: { status: 'door opened' }
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x97 0x00 0x00 0x30 0x03 0xff
+
+//---------------------------------cover-left-open---------------------------------//
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x99 0x00 0x00 0x71 0x05 0x00 0xff 0x00 0xff 0x07 0x03 0x01 0x00
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x9a 0x00 0x00 0x71 0x05 0x00 0xff 0x00 0xff 0x07 0x03 0x01 0x00
+
+//-----------------------------------wake-up----------------------------------------//
+
+
+//exports.COMMAND_CLASS_WAKE_UP_V2        =0x84;
+//exports.DEVICE_SPECIFIC_REPORT_V2       =0x07;
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x9c 0x00 0x00 0x84 0x07
+
+ZWC Received MSG:
+├─ type: unsolicited
+├─ node: 7
+└─ rawdata: 0x23 0x02 0x00 0x50 0x9d 0x00 0x00 0x84 0x07
+
+
+//----------------------------------------------------------------------//
+
+//---------------------------- COMMAND_CLASS_ASSOCIATION ----------------//
+
+
+//-----------lock-----------------//
+
+ZWClient Command Send MSG: { cmd: 'rawexec',
+  node: 9,  // Lock node-id
+  endpoint: '0',
+  interface: '0',
+  rawdata: [
+  133, // COMMAND_CLASS_ASSOCIATION
+   5    // ASSOCIATION_GROUPINGS_GET
+   ] }
+ZWClient Received MSG:
+{ type: 'response', node: 9, ep: 0, rawdata: [
+    133,
+    6,  // ASSOCIATION_GROUPINGS_REPORT
+    1   // The number of groupings this node supports. ( only one)
+    ] }
+
+ZWClient Command Send MSG: { cmd: 'rawexec',
+  node: 9,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 133, 2, 1 ] }
+
+ZWClient Received MSG:
+{ type: 'response',
+  node: 9,
+  ep: 0,
+  rawdata: [
+  133,
+   3,       // ASSOCIATION_REPORT
+   1,       // Grouping Identifier
+   5,       // Max Nodes Supported
+   0,       // Reports to Follow
+   1        // These fields contain a list of node IDs that are associated with the advertised Grouping Identifier.
+    ] }
+
+//----------after removing node 1 from association----------------//
+Send Test RAW Command QUERY:
+ZWClient Command Send MSG:
+{ cmd: 'rawexec',
+  node: 9,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 133, 2, 1 ] }
+ZWClient Received MSG:
+{ type: 'response', node: 9, ep: 0, rawdata: [ 133, 3, 1, 5, 0 ] }
+
+//----------After Associating 9 with node 11----------------//
+
+ZWClient Command Send MSG: { cmd: 'rawexec',
+  node: 9,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 133, 2, 1 ] }
+ZWClient Received MSG:
+{ type: 'response',
+  node: 9,
+  ep: 0,
+  rawdata: [
+  133,
+  3,
+  1,
+  5,
+  0,
+  1,
+  11
+   ] }
+   //--- After adding other nodes ----/
+   ZWClient Command Send MSG: { cmd: 'rawexec',
+     node: 9,
+     endpoint: '0',
+     interface: '0',
+     rawdata: [ 133, 2, 1 ] }
+   ZWClient Received MSG:
+   { type: 'response',
+     node: 9,
+     ep: 0,
+     rawdata: [ 133, 3, 1, 5, 0, 1, 7, 11, 12 ] }
+
+
+//--------------//
+
+
+//-------thermostat-------------------//
+
+ZWClient Command Send MSG: { cmd: 'rawexec',
+  node: 11,     //thermostat
+  endpoint: '0',
+  interface: '0',
+  rawdata: [
+  133,  // COMMAND_CLASS_ASSOCIATION
+  5     // ASSOCIATION_GROUPINGS_GET
+  ] }
+ZWClient Received MSG:
+{ type: 'response', node: 11, ep: 0, rawdata: [
+ 133,
+  6,    // // ASSOCIATION_GROUPINGS_REPORT
+   1    // The number of groupings this node supports.
+   ] }
+
+
+
+   ZWClient Command Send MSG: { cmd: 'rawexec',
+     node: 11,
+     endpoint: '0',
+     interface: '0',
+     rawdata: [
+     133,   //COMMAND_CLASS_ASSOCIATION_V2
+     2,     // ASSOCIATION_GET
+     1      // group identifier
+     ] }
+
+   ZWClient Received MSG:
+   { type: 'response',
+     node: 11,
+     ep: 0,
+     rawdata: [
+     133,
+     3,     // ASSOCIATION_REPORT
+     1,     // Grouping Identifier
+     2,     // Max Nodes Supported
+     0,     // Reports to Follow
+     1      // These fields contain a list of node IDs that are associated with the advertised Grouping Identifier.
+     ] }
+
+//--------------------ZIP-Gateway---------------------------//
+
+//-----------gateway-mode---------------//
+ZWClient Command Send MSG:
+{ cmd: 'rawexec',
+  node: 1,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [
+  95,   //  COMMAND_CLASS_ZIP_GATEWAY
+  2     //  GATEWAY_MODE_GET
+  ] }
+ZWClient Received MSG:
+{ type: 'response', node: 1, ep: 0,
+    rawdata: [
+    95, //  COMMAND_CLASS_ZIP_GATEWAY
+    3,  //  GATEWAY_MODE_report
+    1   //  Stand-alone=0x01/Portal=0x02
+    ] }
+
+//-----------Usolicated Destination------------//
+ZWClient Command Send MSG:
+{ cmd: 'rawexec',
+  node: 1,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [
+  95,
+  9
+  ] }
+ZWClient Received MSG:
+{ type: 'response',
+  node: 1,
+  ep: 0,
+  rawdata: [
+  95,
+  10,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 192, 168, 1, 222, // IP
+   16, 27  // 4123
+   ] }
+
+//------------------Door Window Sensor cover open close------------------//
+
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 103, 0, 0, 48, 3, 0 ] }
+Unsoliciated Msg:
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 104, 0, 0, 48, 3, 255 ] }
+Unsoliciated Msg:
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 105, 0, 0, 48, 3, 0 ] }
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '7',
+  rawdata: [ 35, 2, 0, 80, 106, 0, 0, 48, 3, 255 ] }
+
+
+//--------------PIR Sensor--------------------//
+
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 151, 0, 0, 132, 7 ] }
+Unsoliciated Msg:
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 152, 0, 0,
+  132,  // COMMAND_CLASS_WAKE_UP_V2
+  7 ] }
+
+  Unsoliciated Msg:
+  ZWClient Received MSG:
+  { type: 'unsolicited',
+    node: '12',
+    rawdata: [ 35, 2, 128, 80, 154, 0, 0, 113, 5, 0, 255, 0, 255, 7, 3, 1, 0 ] }
+
+    Unsoliciated Msg:
+    ZWClient Received MSG:
+    { type: 'unsolicited',
+      node: '12',
+      rawdata: [ 35, 2, 128, 80, 161, 0, 0,
+      113, //COMMAND_CLASS_ALARM_V2 // 0x71 Alarm
+      5,    // ALARM_REPORT_V2
+      0,
+      255,
+      0,
+      255,
+      7,
+      3,
+      1,
+      0 ] }
+
+ //-------------close enclosure--------------------//
+
+       Unsoliciated Msg:
+       ZWClient Received MSG:
+       { type: 'unsolicited',
+         node: '12',
+         rawdata: [ 35, 2, 128, 80, 218, 0, 0, 132, 7 ] }
+
+       //--------after some time---//
+       Unsoliciated Msg:
+       ZWClient Received MSG:
+       { type: 'unsolicited',
+         node: '12',
+         rawdata: [ 35, 2, 128, 80, 219, 0, 0, 48, 3, 0 ] }
+
+         //-------- again after some time---//
+         Unsoliciated Msg:
+         ZWClient Received MSG:
+         { type: 'unsolicited',
+           node: '12',
+           rawdata: [ 35, 2, 128, 80, 220, 0, 0, 48, 3, 255 ] }
+//----------------open cover------------------------------//
+
+Unsoliciated Msg:
+ZWClient Received MSG:
+{ type: 'unsolicited',
+  node: '12',
+  rawdata: [ 35, 2, 128, 80, 221, 0, 0, 113, 5, 0, 255, 0, 255, 7, 3, 1, 0 ] }
+
+//-------------------group support---------------------//
+
+ZWClient Command Send MSG:
+{ cmd: 'rawexec',
+  node: 12,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 133, 5 ] }
+Response Msg:
+ZWClient Received MSG:
+{ type: 'response', node: 12, ep: 0, rawdata: [ 133, 6, 2 ] }
+
+Send Test RAW Command QUERY:
+ZWClient Command Send MSG:
+{ cmd: 'rawexec',
+  node: 12,
+  endpoint: '0',
+  interface: '0',
+  rawdata: [ 133, 2, 2 ] }
+Response Msg:
+ZWClient Received MSG:
+{ type: 'response',
+  node: 12,
+  ep: 0,
+  rawdata:
+  [
+  133,
+  3,    // ASSOCIATION_REPORT
+  2,    // Grouping Identifier
+  3,    // Max Nodes Supported
+  0     // Reports to Follow
+  ] }
+  //-----------------------associating node 12, group-1 association detials-----------------//
+
+  ZWClient Command Send MSG:
+  { cmd: 'rawexec',
+    node: 12,
+    endpoint: '0',
+    interface: '0',
+    rawdata: [ 133, 2, 1 ] }
+  Response Msg:
+  ZWClient Received MSG:
+  { type: 'response',
+    node: 12,
+    ep: 0,
+    rawdata: [
+    133,
+    3,      // ASSOCIATION_REPORT
+    1,      // Grouping Identifier
+    1,      // Max Nodes Supported
+    0,      // Reports to Follow
+    1       // These fields contain a list of node IDs that are associated with the advertised Grouping Identifier.
+    ] }
+
+
+  //--------- after associating node 12 with node 9 in group 2--------------//
+
+   ZWClient Command Send MSG:
+   { cmd: 'rawexec',
+     node: 12,
+     endpoint: '0',
+     interface: '0',
+     rawdata: [ 133, 2, 2 ] }
+   Response Msg:
+   ZWClient Received MSG:
+   { type: 'response',
+     node: 12,
+     ep: 0,
+     rawdata:
+     [
+     133,
+     3,     // ASSOCIATION_REPORT
+     2,     // Grouping Identifier
+     3,     // Max Nodes Supported
+     0,     // Reports to Follow
+     9      // These fields contain a list of node IDs that are associated with the advertised Grouping Identifier.
+     ] }
+
+  //---------------------------------------------------//
+
+  //-------------------Wakeup-Report--------------------//
+  ZWClient Command Send MSG:
+  { cmd: 'rawexec',
+    node: 12,
+    endpoint: '0',
+    interface: '0',
+    rawdata: [
+    132,    // COMMAND_CLASS_WAKE_UP
+    5       // WAKE_UP_INTERVAL_GET
+    ] }
+  Response Msg:
+  ZWClient Received MSG:
+  { type: 'response',
+    node: 12,
+    ep: 0,
+    rawdata: [
+    132,    // COMMAND_CLASS_WAKE_UP
+    6,      // WAKE_UP_INTERVAL_Report
+    0,
+    56,
+    64,
+    1
+    ] }
+
+  //------------- door sensor node-7-wakeup packet--------------//
+
+  ZWClient Received MSG:
+  { type: 'unsolicited',
+    node: '7',
+    rawdata: [ 35, 2, 0, 80, 72, 0, 0,
+    132,  // COMMAND_CLASS_WAKE_UP_V2
+    7       //
+    ] }
+
+    //-----------cover open------------------//
+    ZWClient Received MSG:
+    { type: 'unsolicited',
+      node: '7',
+      rawdata: [ 35, 2, 0, 80, 60, 0, 0, 113, 5, 0, 255, 0, 255, 7, 3, 1, 0 ] }
+
+
+
+ //------------------------------------------------------------//
+
+
+//-----------------------------------------end---------------------------------------------//
+

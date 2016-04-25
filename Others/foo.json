@@ -1,0 +1,34 @@
+{
+  "zw_classes": {
+    "bas_dev": [
+      {
+        "read_only": false,
+        "name": "BASIC_TYPE_CONTROLLER",
+        "key": 1,
+        "help": "Controller",
+        "comment": "Node is a portable controller "
+      },
+      {
+        "read_only": false,
+        "name": "BASIC_TYPE_ROUTING_SLAVE",
+        "key": 4,
+        "help": "Routing Slave",
+        "comment": "Node is a slave with routing capabilities"
+      },
+      {
+        "read_only": false,
+        "name": "BASIC_TYPE_SLAVE",
+        "key": 3,
+        "help": "Slave",
+        "comment": "Node is a slave"
+      },
+      {
+        "read_only": false,
+        "name": "BASIC_TYPE_STATIC_CONTROLLER",
+        "key": 2,
+        "help": "Static Controller",
+        "comment": "Node is a static controller"
+      }
+    ]
+  }
+}

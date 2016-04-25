@@ -1,0 +1,10 @@
+
+
+<zw_classes>
+
+    <bas_dev read_only="false" name="BASIC_TYPE_CONTROLLER" key="0x01" help="Controller" comment="Node is a portable controller " />
+    <bas_dev read_only="false" name="BASIC_TYPE_ROUTING_SLAVE" key="0x04" help="Routing Slave" comment="Node is a slave with routing capabilities" />
+    <bas_dev read_only="false" name="BASIC_TYPE_SLAVE" key="0x03" help="Slave" comment="Node is a slave" />
+    <bas_dev read_only="false" name="BASIC_TYPE_STATIC_CONTROLLER" key="0x02" help="Static Controller" comment="Node is a static controller" />
+
+</zw_classes>

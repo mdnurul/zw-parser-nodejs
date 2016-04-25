@@ -1,0 +1,80 @@
+<cmd_class key="0x42" version="2" name="COMMAND_CLASS_THERMOSTAT_OPERATING_STATE" help="Command Class Thermostat Operating State" read_only="false" comment="">
+    <cmd key="0x02" name="THERMOSTAT_OPERATING_STATE_GET" help="Thermostat Operating State Get" comment="" />
+    <cmd key="0x03" name="THERMOSTAT_OPERATING_STATE_REPORT" help="Thermostat Operating State Report" comment="">
+        <param key="0x00" name="Properties1" type="STRUCT_BYTE" typehashcode="0x07" comment="">
+            <fieldenum key="0x00" fieldname="Operating State" fieldmask="0x0F" shifter="0">
+                <fieldenum value="Idle" />
+                <fieldenum value="Heating" />
+                <fieldenum value="Cooling" />
+                <fieldenum value="Fan Only" />
+                <fieldenum value="Pending Heat" />
+                <fieldenum value="Pending Cool" />
+                <fieldenum value="Vent/Economizer" />
+                <fieldenum value="Aux Heating" />
+                <fieldenum value="2nd Stage Heating" />
+                <fieldenum value="2nd Stage Cooling" />
+                <fieldenum value="2nd Stage Aux Heat" />
+                <fieldenum value="3rd Stage Aux Heat" />
+            </fieldenum>
+            <bitfield key="0x01" fieldname="Reserved" fieldmask="0xF0" shifter="4" />
+        </param>
+    </cmd>
+    <cmd key="0x01" name="THERMOSTAT_OPERATING_STATE_LOGGING_SUPPORTED_GET" help="Thermostat Operating State Logging Supported Get" />
+    <cmd key="0x04" name="THERMOSTAT_OPERATING_LOGGING_SUPPORTED_REPORT" help="Thermostat Operating State Logging Supported Report">
+        <param key="0x00" name="Bit Mask" type="BITMASK" typehashcode="0x06">
+            <bitmask key="0x00" paramoffs="255" lenmask="0x00" lenoffs="0" />
+            <bitflag key="0x00" flagname="Idle" flagmask="0x00" />
+            <bitflag key="0x01" flagname="Heating" flagmask="0x01" />
+            <bitflag key="0x02" flagname="Cooling" flagmask="0x02" />
+            <bitflag key="0x03" flagname="Fan Only" flagmask="0x03" />
+            <bitflag key="0x04" flagname="Pending Heat" flagmask="0x04" />
+            <bitflag key="0x05" flagname="Pending Cool" flagmask="0x05" />
+            <bitflag key="0x06" flagname="Vent/Economizer" flagmask="0x06" />
+            <bitflag key="0x07" flagname="Aux Heating" flagmask="0x07" />
+            <bitflag key="0x08" flagname="2nd Stage Heating" flagmask="0x08" />
+            <bitflag key="0x09" flagname="2nd Stage Cooling" flagmask="0x09" />
+            <bitflag key="0x0A" flagname="2nd Stage Aux Heat" flagmask="0x0A" />
+            <bitflag key="0x0B" flagname="3rd Stage Aux Heat" flagmask="0x0B" />
+        </param>
+    </cmd>
+    <cmd key="0x05" name="THERMOSTAT_OPERATING_STATE_LOGGING_GET" help="Thermostat Operating State Logging Get">
+        <param key="0x00" name="Bit Mask" type="BITMASK" typehashcode="0x06">
+            <bitmask key="0x00" paramoffs="255" lenmask="0x00" lenoffs="0" />
+            <bitflag key="0x00" flagname="Idle" flagmask="0x00" />
+            <bitflag key="0x01" flagname="Heating" flagmask="0x01" />
+            <bitflag key="0x02" flagname="Cooling" flagmask="0x02" />
+            <bitflag key="0x03" flagname="Fan Only" flagmask="0x03" />
+            <bitflag key="0x04" flagname="Pending Heat" flagmask="0x04" />
+            <bitflag key="0x05" flagname="Pending Cool" flagmask="0x05" />
+            <bitflag key="0x06" flagname="Vent/Economizer" flagmask="0x06" />
+            <bitflag key="0x07" flagname="Aux Heating" flagmask="0x07" />
+            <bitflag key="0x08" flagname="2nd Stage Heating" flagmask="0x08" />
+            <bitflag key="0x09" flagname="2nd Stage Cooling" flagmask="0x09" />
+            <bitflag key="0x0A" flagname="2nd Stage Aux Heat" flagmask="0x0A" />
+            <bitflag key="0x0B" flagname="3rd Stage Aux Heat" flagmask="0x0B" />
+        </param>
+    </cmd>
+    <cmd key="0x06" name="THERMOSTAT_OPERATING_STATE_LOGGING_REPORT" help="Thermostat Operating State Logging Report">
+        <param key="0x00" name="Reports to Follow" type="BYTE" typehashcode="0x01">
+            <valueattrib key="0x00" hasdefines="false" showhex="true" />
+        </param>
+        <variant_group key="0x01" name="vg1" variantKey="0x00" paramOffs="0x00" sizemask="0xFF" sizeoffs="0x00" typehashcode="0x0D" comment="">
+            <param key="0x00" name="Properties1" type="STRUCT_BYTE" typehashcode="0x07" comment="">
+                <bitfield key="0x00" fieldname="Operating State Log Type" fieldmask="0x0F" shifter="0" />
+                <bitfield key="0x01" fieldname="Reserved" fieldmask="0xF0" shifter="4" />
+            </param>
+            <param key="0x01" name="Usage Today (Hours)" type="BYTE" typehashcode="0x01">
+                <valueattrib key="0x00" hasdefines="false" showhex="true" />
+            </param>
+            <param key="0x02" name="Usage Today (Minutes)" type="BYTE" typehashcode="0x01">
+                <valueattrib key="0x00" hasdefines="false" showhex="true" />
+            </param>
+            <param key="0x03" name="Usage Yesterday (Hours)" type="BYTE" typehashcode="0x01">
+                <valueattrib key="0x00" hasdefines="false" showhex="true" />
+            </param>
+            <param key="0x04" name="Usage Yesterday (Minutes)" type="BYTE" typehashcode="0x01">
+                <valueattrib key="0x00" hasdefines="false" showhex="true" />
+            </param>
+        </variant_group>
+    </cmd>
+</cmd_class>

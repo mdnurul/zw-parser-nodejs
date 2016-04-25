@@ -1,0 +1,42 @@
+
+
+/**
+ * Created by bitcanny on 4/18/16.
+ */
+
+
+<cmd_class key="0x66" version="1" name="COMMAND_CLASS_BARRIER_OPERATOR" help="Command Class Barrier Operator" read_only="false">
+    <cmd key="0x01" name="BARRIER_OPERATOR_SET" help="Barrier Operator Set">
+    <param key="0x00" name="Target Value" type="CONST" typehashcode="0x0B">
+    <const key="0x00" flagname="CLOSE" flagmask="0x00" />
+    <const key="0x01" flagname="OPEN" flagmask="0xFF" />
+</param>
+
+cmd_class =
+{BARRIER_OPERATOR: {
+    key: 0x01;
+cmd: {
+    BARRIER_OPERATOR_SET : {
+        key: 0x01;
+        param : {
+            Target Value	: {
+                key: 0x00;
+                const : {
+                    CLOSE
+                }
+
+
+            }
+
+            parse("01 01 00 01")
+            -->{ Command_class : BARRIER_OPERATOR,
+                cmd: BARRIER_OPERATOR_SET,
+                payload:  "00 01"
+                }
+
+
+
+
+                zwave_cmd("BARRIER_OPERATOR", "BARRIER_OPERTOR_SET", "00 01")
+
+            get_param("BARRIER_OPERATOR", "BARRIER_OPERTOR_SET", "Target Value")

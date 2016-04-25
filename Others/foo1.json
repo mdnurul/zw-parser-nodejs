@@ -1,0 +1,338 @@
+{
+  "cmd_class": {
+    "key": 66,
+    "version": 2,
+    "name": "COMMAND_CLASS_THERMOSTAT_OPERATING_STATE",
+    "help": "Command Class Thermostat Operating State",
+    "read_only": false,
+    "comment": "",
+    "cmd": [
+      {
+        "key": 2,
+        "name": "THERMOSTAT_OPERATING_STATE_GET",
+        "help": "Thermostat Operating State Get",
+        "comment": ""
+      },
+      {
+        "key": 3,
+        "name": "THERMOSTAT_OPERATING_STATE_REPORT",
+        "help": "Thermostat Operating State Report",
+        "comment": "",
+        "param": {
+          "key": 0,
+          "name": "Properties1",
+          "type": "STRUCT_BYTE",
+          "typehashcode": 7,
+          "comment": "",
+          "fieldenum": {
+            "key": 0,
+            "fieldname": "Operating State",
+            "fieldmask": 15,
+            "shifter": 0,
+            "$t": "",
+            "fieldenum": [
+              {
+                "value": "Idle"
+              },
+              {
+                "value": "Heating"
+              },
+              {
+                "value": "Cooling"
+              },
+              {
+                "value": "Fan Only"
+              },
+              {
+                "value": "Pending Heat"
+              },
+              {
+                "value": "Pending Cool"
+              },
+              {
+                "value": "Vent/Economizer"
+              },
+              {
+                "value": "Aux Heating"
+              },
+              {
+                "value": "2nd Stage Heating"
+              },
+              {
+                "value": "2nd Stage Cooling"
+              },
+              {
+                "value": "2nd Stage Aux Heat"
+              },
+              {
+                "value": "3rd Stage Aux Heat"
+              }
+            ]
+          },
+          "bitfield": {
+            "key": 1,
+            "fieldname": "Reserved",
+            "fieldmask": 240,
+            "shifter": 4
+          }
+        }
+      },
+      {
+        "key": 1,
+        "name": "THERMOSTAT_OPERATING_STATE_LOGGING_SUPPORTED_GET",
+        "help": "Thermostat Operating State Logging Supported Get"
+      },
+      {
+        "key": 4,
+        "name": "THERMOSTAT_OPERATING_LOGGING_SUPPORTED_REPORT",
+        "help": "Thermostat Operating State Logging Supported Report",
+        "param": {
+          "key": 0,
+          "name": "Bit Mask",
+          "type": "BITMASK",
+          "typehashcode": 6,
+          "bitmask": {
+            "key": 0,
+            "paramoffs": 255,
+            "lenmask": 0,
+            "lenoffs": 0
+          },
+          "bitflag": [
+            {
+              "key": 0,
+              "flagname": "Idle",
+              "flagmask": 0
+            },
+            {
+              "key": 1,
+              "flagname": "Heating",
+              "flagmask": 1
+            },
+            {
+              "key": 2,
+              "flagname": "Cooling",
+              "flagmask": 2
+            },
+            {
+              "key": 3,
+              "flagname": "Fan Only",
+              "flagmask": 3
+            },
+            {
+              "key": 4,
+              "flagname": "Pending Heat",
+              "flagmask": 4
+            },
+            {
+              "key": 5,
+              "flagname": "Pending Cool",
+              "flagmask": 5
+            },
+            {
+              "key": 6,
+              "flagname": "Vent/Economizer",
+              "flagmask": 6
+            },
+            {
+              "key": 7,
+              "flagname": "Aux Heating",
+              "flagmask": 7
+            },
+            {
+              "key": 8,
+              "flagname": "2nd Stage Heating",
+              "flagmask": 8
+            },
+            {
+              "key": 9,
+              "flagname": "2nd Stage Cooling",
+              "flagmask": 9
+            },
+            {
+              "key": 10,
+              "flagname": "2nd Stage Aux Heat",
+              "flagmask": 10
+            },
+            {
+              "key": 11,
+              "flagname": "3rd Stage Aux Heat",
+              "flagmask": 11
+            }
+          ]
+        }
+      },
+      {
+        "key": 5,
+        "name": "THERMOSTAT_OPERATING_STATE_LOGGING_GET",
+        "help": "Thermostat Operating State Logging Get",
+        "param": {
+          "key": 0,
+          "name": "Bit Mask",
+          "type": "BITMASK",
+          "typehashcode": 6,
+          "bitmask": {
+            "key": 0,
+            "paramoffs": 255,
+            "lenmask": 0,
+            "lenoffs": 0
+          },
+          "bitflag": [
+            {
+              "key": 0,
+              "flagname": "Idle",
+              "flagmask": 0
+            },
+            {
+              "key": 1,
+              "flagname": "Heating",
+              "flagmask": 1
+            },
+            {
+              "key": 2,
+              "flagname": "Cooling",
+              "flagmask": 2
+            },
+            {
+              "key": 3,
+              "flagname": "Fan Only",
+              "flagmask": 3
+            },
+            {
+              "key": 4,
+              "flagname": "Pending Heat",
+              "flagmask": 4
+            },
+            {
+              "key": 5,
+              "flagname": "Pending Cool",
+              "flagmask": 5
+            },
+            {
+              "key": 6,
+              "flagname": "Vent/Economizer",
+              "flagmask": 6
+            },
+            {
+              "key": 7,
+              "flagname": "Aux Heating",
+              "flagmask": 7
+            },
+            {
+              "key": 8,
+              "flagname": "2nd Stage Heating",
+              "flagmask": 8
+            },
+            {
+              "key": 9,
+              "flagname": "2nd Stage Cooling",
+              "flagmask": 9
+            },
+            {
+              "key": 10,
+              "flagname": "2nd Stage Aux Heat",
+              "flagmask": 10
+            },
+            {
+              "key": 11,
+              "flagname": "3rd Stage Aux Heat",
+              "flagmask": 11
+            }
+          ]
+        }
+      },
+      {
+        "key": 6,
+        "name": "THERMOSTAT_OPERATING_STATE_LOGGING_REPORT",
+        "help": "Thermostat Operating State Logging Report",
+        "param": {
+          "key": 0,
+          "name": "Reports to Follow",
+          "type": "BYTE",
+          "typehashcode": 1,
+          "valueattrib": {
+            "key": 0,
+            "hasdefines": false,
+            "showhex": true
+          }
+        },
+        "variant_group": {
+          "key": 1,
+          "name": "vg1",
+          "variantKey": 0,
+          "paramOffs": 0,
+          "sizemask": 255,
+          "sizeoffs": 0,
+          "typehashcode": 13,
+          "comment": "",
+          "param": [
+            {
+              "key": 0,
+              "name": "Properties1",
+              "type": "STRUCT_BYTE",
+              "typehashcode": 7,
+              "comment": "",
+              "bitfield": [
+                {
+                  "key": 0,
+                  "fieldname": "Operating State Log Type",
+                  "fieldmask": 15,
+                  "shifter": 0
+                },
+                {
+                  "key": 1,
+                  "fieldname": "Reserved",
+                  "fieldmask": 240,
+                  "shifter": 4
+                }
+              ]
+            },
+            {
+              "key": 1,
+              "name": "Usage Today (Hours)",
+              "type": "BYTE",
+              "typehashcode": 1,
+              "valueattrib": {
+                "key": 0,
+                "hasdefines": false,
+                "showhex": true
+              }
+            },
+            {
+              "key": 2,
+              "name": "Usage Today (Minutes)",
+              "type": "BYTE",
+              "typehashcode": 1,
+              "valueattrib": {
+                "key": 0,
+                "hasdefines": false,
+                "showhex": true
+              }
+            },
+            {
+              "key": 3,
+              "name": "Usage Yesterday (Hours)",
+              "type": "BYTE",
+              "typehashcode": 1,
+              "valueattrib": {
+                "key": 0,
+                "hasdefines": false,
+                "showhex": true
+              }
+            },
+            {
+              "key": 4,
+              "name": "Usage Yesterday (Minutes)",
+              "type": "BYTE",
+              "typehashcode": 1,
+              "valueattrib": {
+                "key": 0,
+                "hasdefines": false,
+                "showhex": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
